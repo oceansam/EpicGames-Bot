@@ -23,7 +23,7 @@ client.on("ready", () => {
 	});
 
 	let promotionGames = new cron.CronJob(
-		"0 22 * * * *",
+		"0 0 * * 3",
 
 		async () => {
 			const freeGames = await fetchData();
